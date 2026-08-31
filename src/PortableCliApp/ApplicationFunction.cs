@@ -49,12 +49,12 @@ public static class ApplicationFunctions
     /// </summary>
     public static int Add(int firstNumber, int secondNumber)
     {
-        return firstNumber + secondNumber;
+        /// return firstNumber + secondNumber;
 
         /// Comment out the previous statement
         /// and uncomment the one below to introduce an error
         
-        /// return firstNumber - secondNumber;
+        return firstNumber - secondNumber;
 
     }
 
