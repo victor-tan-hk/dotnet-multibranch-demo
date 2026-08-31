@@ -12,6 +12,8 @@ Console.WriteLine("Cross-platform .NET 10 CLI demonstration");
 Console.WriteLine("========================================");
 Console.WriteLine();
 
+Console.WriteLine("Making a change for feature/function1");
+
 /*
  * Show the environment in which this build is running.
  *
