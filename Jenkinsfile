@@ -158,4 +158,29 @@ pipeline {
             }
         }
     }
+
+    post {
+
+        /*
+         * Same as previous Jenkinsfile 
+         */
+        always {
+
+            mstest(
+                testResultsFile:
+                    'artifacts/test-results/**/*.trx',
+                failOnError: false,
+                keepLongStdio: true
+            )
+        }
+
+        success {
+
+            archiveArtifacts(
+                artifacts: 'artifacts/**/*',
+                allowEmptyArchive: true,
+                fingerprint: true
+            )
+        }
+    }
 }
